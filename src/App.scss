@@ -4,6 +4,17 @@
   text-align: center;
   font-family: 'Khula', sans-serif;
 }
+
+h1.title {
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+  &--ingrid {
+    font-size: 14rem;
+  }
+  &--lenert {
+    font-size: 14rem;
+  }
 }
 
 .App-logo {
@@ -13,13 +24,9 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100vh;
   padding: 20px;
   color: white;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {
