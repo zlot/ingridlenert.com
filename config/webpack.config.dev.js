@@ -209,7 +209,12 @@ module.exports = {
               ],
             },
           },
-          require.resolve('sass-loader')
+          {
+            loader: require.resolve('sass-loader'),
+            options: {
+              includePaths: [paths.appNodeModules]              
+            }
+          }
         ],
       },
       // ** STOP ** Are you adding a new loader?
