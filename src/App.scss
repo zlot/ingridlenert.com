@@ -3,22 +3,29 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: white;
 }
 .App {
   text-align: center;
   font-family: 'Khula', sans-serif;
 }
 
-.App-header {
+.header {
+  color: white;
   background-color: black;
   height: 800px;
-  padding: 20px;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  h1.title {
+  &__container {
+    width: 1011px;
+    height: 590px;
+  }
+
+  &__title {
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
     line-height: 0.9;
     &--ingrid {
       font-size: 265px;
@@ -28,6 +35,8 @@ body {
     }
   }
 }
+
+
 
 @keyframes spin {
   from { transform: rotate(0deg); }
