@@ -12,8 +12,16 @@ export default class App extends Component {
 
   render = () => {
     return (
-      <div className="App">
+      <div className='App'>
         <Header />
+        <div className='grid-container grid-container-padded portfolio'>
+          <div className='grid-x grid-padding-x'>
+            <div className='cell small-12 portfolio-item'>Portfolio item</div>
+          </div>
+          <div className='grid-x grid-padding-x'>
+            <div className='cell small-12' style={{backgroundColor: 'white', height: 600}}></div>
+          </div>
+        </div>
       </div>
     );
   }
