@@ -10,22 +10,23 @@ body {
   font-family: 'Khula', sans-serif;
 }
 
-h1.title {
-  margin: 0;
-  padding: 0;
-  line-height: 0.9;
-  &--ingrid {
-    font-size: 14rem;
-  }
-  &--lenert {
-    font-size: 14rem;
-  }
-}
 .App-header {
-  background-color: #222;
-  height: 100vh;
+  background-color: black;
+  height: 800px;
   padding: 20px;
   color: white;
+
+  h1.title {
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+    &--ingrid {
+      font-size: 265px;
+    }
+    &--lenert {
+      font-size: 235px; 
+    }
+  }
 }
 
 @keyframes spin {
