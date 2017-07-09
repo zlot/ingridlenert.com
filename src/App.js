@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
 import './App.scss'
 import Header from './Header'
+import 'foundation-sites'
+import $ from 'jquery'
 
-class App extends Component {
-  render() {
+export default class App extends Component {
+
+  componentDidMount = () => {
+    $(document).foundation()
+  }
+
+  render = () => {
     return (
       <div className="App">
         <Header />
@@ -11,5 +18,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
