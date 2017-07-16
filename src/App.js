@@ -24,7 +24,6 @@ export default class App extends Component {
   render = () => {
     return (
       <div className='App'>
-        <div id='Lucy_Mitsy'></div>
         <div id='Jessica'></div>
         <Header />
         <div className='grid-container grid-container-padded portfolio'>

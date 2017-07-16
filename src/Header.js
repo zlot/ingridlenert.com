@@ -12,6 +12,8 @@ import shape07 from './assets/shape 07.svg'
 const Header = () => (
   <div className="Header">
     <div className='Header__container'>
+      <div id='Lucy_Mitsy'></div>
+      <div id='Jessica'></div>
       <div id='Amani'></div> 
       <h1 className='Header__title Header__title--ingrid'>Ingrid</h1>
       <h1 className='Header__title Header__title--lenert'>Lenert</h1>
