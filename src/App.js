@@ -16,10 +16,10 @@ export default class App extends Component {
         <Header />
         <div className='grid-container grid-container-padded portfolio'>
           <div className='grid-x grid-padding-x'>
-            <div className='cell small-12 portfolio-item'>Portfolio item</div>
+            <div className='cell small-12 portfolio-item'>Coming soon … 🏝</div>
           </div>
           <div className='grid-x grid-padding-x'>
-            <div className='cell small-12' style={{backgroundColor: 'white', height: 600}}></div>
+            <div className='cell small-12'></div>
           </div>
         </div>
       </div>
