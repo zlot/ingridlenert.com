@@ -2,7 +2,6 @@ import React from 'react'
 import './Header.scss'
 import alfie from './assets/alfie.svg'
 import amani from './assets/amani.svg'
-import jessica from './assets/jessica.svg'
 import shape01 from './assets/shape 01.svg'
 import shape02 from './assets/shape 02.svg'
 import shape03 from './assets/shape 03.svg'
@@ -21,9 +20,6 @@ const Header = () => (
       </div>
       <div className='Header__img Header__img--amani'>
         <img src={amani} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--jessica'>
-        <img src={jessica} alt=' '/>  
       </div>
       <div className='Header__img Header__img--shape01'>
         <img src={shape01} alt=' '/>

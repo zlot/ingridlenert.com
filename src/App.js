@@ -4,6 +4,7 @@ import 'foundation-sites'
 import $ from 'jquery'
 import './App.scss'
 import './assets/latest.scss'
+import './assets/jessica.scss'
 import {addAnimation, startAnimations} from './spriteAnimator'
 
 export default class App extends Component {
@@ -12,6 +13,7 @@ export default class App extends Component {
     $(document).foundation()
 
     addAnimation('Lucy_Mitsy', 28)
+    addAnimation('Jessica', 18)
     const interval = startAnimations({
       interval: 125
     })
@@ -21,6 +23,7 @@ export default class App extends Component {
     return (
       <div className='App'>
         <div id='Lucy_Mitsy'></div>
+        <div id='Jessica'></div>
         <Header />
         <div className='grid-container grid-container-padded portfolio'>
           <div className='grid-x grid-padding-x'>
