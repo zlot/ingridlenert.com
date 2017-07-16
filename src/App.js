@@ -3,7 +3,7 @@ import Header from './Header'
 import 'foundation-sites'
 import $ from 'jquery'
 import './App.scss'
-import './assets/latest.scss'
+import './assets/lucy_mitsy.scss'
 import './assets/jessica.scss'
 import {addAnimation, startAnimations} from './spriteAnimator'
 
