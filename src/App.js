@@ -3,33 +3,24 @@ import Header from './Header'
 import 'foundation-sites'
 import $ from 'jquery'
 import './App.scss'
+import './assets/latest.scss'
+import {addAnimation, startAnimations} from './spriteAnimator'
 
 export default class App extends Component {
 
   componentDidMount = () => {
     $(document).foundation()
-    let name = `Lucy_Mitsy-`
-    let num = '1'
-    setInterval(() => {
-      if(num > 28) {
-        num = 1
-      }
-      $('#test').removeClass(`Lucy_Mitsy-${num}`)
-      num = pad(Number(num)+1, 2)
-      $('#test').addClass(`Lucy_Mitsy-${num}`)
-    }, 150)
 
-    function pad(num, size) {
-      var s = num+"";
-      while (s.length < size) s = "0" + s;
-      return s;
-    }
+    addAnimation('Lucy_Mitsy', 28)
+    const interval = startAnimations({
+      interval: 125
+    })
   }
 
   render = () => {
     return (
       <div className='App'>
-        <div id='test' className='sprite Lucy_Mitsy-01'></div>
+        <div id='Lucy_Mitsy'></div>
         <Header />
         <div className='grid-container grid-container-padded portfolio'>
           <div className='grid-x grid-padding-x'>
