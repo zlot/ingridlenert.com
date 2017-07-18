@@ -1,9 +1,10 @@
 import $ from 'jquery'
 
 const animations = []
+let animInterval
 
 const startAnimations = ({interval=1000}) => {
-  return setInterval(() => {
+  animInterval = setInterval(() => {
     animations.forEach(anim => {
       anim.$el.removeClass(`${anim.name}-${anim.currentFrame}`)
       if(anim.currentFrame >= anim.numOfFrames) {
@@ -13,6 +14,10 @@ const startAnimations = ({interval=1000}) => {
       anim.$el.addClass(`${anim.name}-${anim.currentFrame}`)
     })
   }, interval)
+}
+
+const stopAnimations = () => {
+  clearInterval(animInterval)
 }
 
 const addAnimation = (name, numOfFrames) => {
@@ -35,4 +40,4 @@ const padExtraDigit = num => {
 }
 
 
-export { addAnimation, startAnimations }
+export { addAnimation, startAnimations, stopAnimations }

@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Header from './Header'
 import 'foundation-sites'
 import $ from 'jquery'
-import {addAnimation, startAnimations} from './spriteAnimator'
+import {addAnimation, startAnimations, stopAnimations} from './spriteAnimator'
+
+const ANIMATION_INTERVAL = 125
 
 export default class App extends Component {
 
@@ -13,8 +15,8 @@ export default class App extends Component {
     addAnimation('Jessica', 18)
     addAnimation('Amani', 12)
     addAnimation('Alfie', 17)
-    const interval = startAnimations({
-      interval: 125
+    startAnimations({
+      interval: ANIMATION_INTERVAL
     })
   }
 
