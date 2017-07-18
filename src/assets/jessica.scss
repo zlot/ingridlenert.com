@@ -17,9 +17,17 @@
   background-image:url('./assets/jessica@2x.png');
   background-size: 252px 1020px;
   position: absolute;
-  left: 114px;
-  top: 29px;
   z-index: 1;
+  display: none;
+  @include breakpoint(medium) {
+    display: block;    
+    left: -4px;
+    top: 29px;    
+  }
+  @include breakpoint(large) {
+    left: 114px;
+    top: 29px;    
+  }
 }
 
 

@@ -17,9 +17,17 @@
   background-image:url('./assets/lucy_mitsy@2x.png');
   background-size: 87px 516px;
   position: absolute;
-  left: 228px;
-  top: -30px;
   z-index: 1;
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+    left: 94px;
+    top: -37px;
+  }
+  @include breakpoint(large) {
+    left: 228px;
+    top: -30px;  
+  }  
 }
 
 .Lucy_Mitsy-01 {width:85px; height:127px; background-position: -1px -1px}

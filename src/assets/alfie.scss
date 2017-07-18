@@ -17,9 +17,17 @@
   background-image:url('./assets/alfie@2x.png');
   background-size: 456px 234px;
   position: absolute;
-  left: 565px;
-  top: 263px;
   z-index: 1;
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+    left: 360px;
+    top: 208px;
+  }
+  @include breakpoint(large) {
+    left: 565px;
+    top: 263px;
+  }  
 }
 
 .Alfie-01 {width:74px; height:76px; background-position: -1px -1px}

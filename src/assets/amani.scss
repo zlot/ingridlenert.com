@@ -17,9 +17,17 @@
   background-image:url('./assets/amani@2x.png');
   background-size: 645px 430px;
   position: absolute;
-  right: -5px;
-  bottom: 62px;
   z-index: 1;
+  display: none;
+  @include breakpoint(medium) {
+    display: block;    
+    right: -120px;
+    bottom: -55px;
+  }
+  @include breakpoint(large) {
+    right: -5px;
+    bottom: 62px;   
+  }
 }
 
 .Amani-01 {width:213px; height:213px; background-position: -1px -1px}
