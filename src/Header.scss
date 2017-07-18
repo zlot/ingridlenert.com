@@ -1,28 +1,55 @@
 .Header {
   color: white;
   background-color: black;
-  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  height: 517px;
   &__container {
-    width: 1011px;
-    height: 590px;
+    width: 320px;
     position: relative;
+  }
+  @include breakpoint(medium) {
+    height: 800px;
+    &__container {
+      width: 640px;
+    }
+  }
+  @include breakpoint(large) {
+    &__container {
+      width: 1011px;
+    }
   }
 
   &__title {
     margin: 0;
-    padding: 20px 0 0 0;
     line-height: 0.9;
+    padding: 10px 0 0 0;
+
     &--ingrid {
-      font-size: 265px;
+      font-size: 100px;
     }
     &--lenert {
-      font-size: 235px; 
+      font-size: 88px; 
     }
+    @include breakpoint(medium) {
+      padding: 20px 0 0 0;    
+      &--ingrid {
+        font-size: 210px;
+      }
+      &--lenert {
+        font-size: 186px; 
+      }
+    }
+    @include breakpoint(large) {
+      &--ingrid {
+        font-size: 265px;
+      }
+      &--lenert {
+        font-size: 235px; 
+      }
+    }    
   }
 
   &__img {
@@ -31,44 +58,115 @@
     animation: spin infinite 14s linear;
 
     &--shape01 {
-      left: 370px;
-      top: -41px;
+      left: 8px;
+      top: -67px;
       animation: spin infinite 30s linear;
     }
     &--shape02 {
-      left: 655px;
-      top: 3px;
+      left: 204px;
+      top: -13px;
       animation: spin infinite 7s ease-in-out;
     }
     &--shape02-bg {
-      left: 645px;
-      top: -1px;
+      left: 195px;
+      top: -29px;
       width: 55px;
       height: 46px;
       background-color: black;
       animation: none;
     }
     &--shape03 {
-      right: -30px;
-      top: -20px;
+      right: 20px;
+      top: -110px;     
     }
     &--shape04 {
-      left: 810px;
-      top: 509px;
+      left: 260px;
+      top: 200px;
       animation: spin-reverse infinite 10s linear;    
     }
     &--shape05 {
-      left: 260px;
-      top: 470px
+      left: 50px;
+      top: 250px;
     }
     &--shape06 {
-      left: 20px;
-      top: 310px;
+      left: 160px;
+      top: 190px;
       animation: spin-reverse infinite 7s ease-in-out;      
     }
     &--shape07 {
-      left: 0;
-      top: 0;
+      left: 100px;
+      top: -130px;
+    }
+
+    @include breakpoint(medium) {
+      &--shape01 {
+        left: 220px;
+        top: -111px;
+      }
+      &--shape02 {
+        left: 434px;
+        top: -9px;
+      }
+      &--shape02-bg {
+        left: 425px;
+        top: -1px;
+      }
+      &--shape03 {
+        right: -80px;
+        top: -50px;
+      }
+      &--shape04 {
+        left: 560px;
+        top: 419px;
+      }
+      &--shape05 {
+        left: 90px;
+        top: 390px;
+      }
+      &--shape06 {
+        left: -70px;
+        top: 250px;
+      }
+      &--shape07 {
+        left: -80px;
+        top: -110px;
+      }
+    }
+    @include breakpoint(large) {
+      &--shape01 {
+        left: 370px;
+        top: -41px;
+      }
+      &--shape02 {
+        left: 655px;
+        top: 3px;
+      }
+      &--shape02-bg {
+        left: 645px;
+        top: -1px;
+        width: 55px;
+        height: 46px;
+      }
+      &--shape03 {
+        right: -30px;
+        top: -20px;
+      }
+      &--shape04 {
+        left: 810px;
+        top: 509px;
+      }
+      &--shape05 {
+        left: 260px;
+        top: 470px
+      }
+      &--shape06 {
+        left: 20px;
+        top: 310px;
+      }
+      &--shape07 {
+        left: 0;
+        top: 0;
+      }
     }
   }
 }

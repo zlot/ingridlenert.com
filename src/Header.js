@@ -16,28 +16,15 @@ const Header = () => (
       <div id='Alfie'></div> 
       <h1 className='Header__title Header__title--ingrid'>Ingrid</h1>
       <h1 className='Header__title Header__title--lenert'>Lenert</h1>
-      <div className='Header__img Header__img--shape01'>
-        <img src={shape01} alt=' '/>
-      </div>
+      
+      <img src={shape01} alt=' ' className='Header__img Header__img--shape01' />
       <div className='Header__img Header__img--shape02-bg'></div>
-      <div className='Header__img Header__img--shape02'>
-        <img src={shape02} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--shape03'>
-        <img src={shape03} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--shape04'>
-        <img src={shape04} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--shape05'>
-        <img src={shape05} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--shape06'>
-        <img src={shape06} alt=' '/>
-      </div>
-      <div className='Header__img Header__img--shape07'>
-        <img src={shape07} alt=' '/>
-      </div>
+      <img src={shape02} alt=' ' className='Header__img Header__img--shape02' />
+      <img src={shape03} alt=' ' className='Header__img Header__img--shape03' />
+      <img src={shape04} alt=' ' className='Header__img Header__img--shape04' />
+      <img src={shape05} alt=' ' className='Header__img Header__img--shape05' />
+      <img src={shape06} alt=' ' className='Header__img Header__img--shape06' />
+      <img src={shape07} alt=' ' className='Header__img Header__img--shape07' />
     </div>
   </div>
 )
