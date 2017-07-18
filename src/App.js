@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import Header from './Header'
 import 'foundation-sites'
 import $ from 'jquery'
-import './App.scss'
 import './assets/lucy_mitsy.scss'
 import './assets/jessica.scss'
 import './assets/amani.scss'
+import './assets/alfie.scss'
 import {addAnimation, startAnimations} from './spriteAnimator'
 
 export default class App extends Component {
@@ -16,6 +16,7 @@ export default class App extends Component {
     addAnimation('Lucy_Mitsy', 28)
     addAnimation('Jessica', 18)
     addAnimation('Amani', 12)
+    addAnimation('Alfie', 17)
     const interval = startAnimations({
       interval: 125
     })
@@ -24,7 +25,6 @@ export default class App extends Component {
   render = () => {
     return (
       <div className='App'>
-        <div id='Jessica'></div>
         <Header />
         <div className='grid-container grid-container-padded portfolio'>
           <div className='grid-x grid-padding-x'>

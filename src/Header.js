@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.scss'
-import alfie from './assets/alfie.svg'
 import shape01 from './assets/shape 01.svg'
 import shape02 from './assets/shape 02.svg'
 import shape03 from './assets/shape 03.svg'
@@ -15,11 +14,9 @@ const Header = () => (
       <div id='Lucy_Mitsy'></div>
       <div id='Jessica'></div>
       <div id='Amani'></div> 
+      <div id='Alfie'></div> 
       <h1 className='Header__title Header__title--ingrid'>Ingrid</h1>
       <h1 className='Header__title Header__title--lenert'>Lenert</h1>
-      <div className='Header__img Header__img--alfie'>
-        <img src={alfie} alt=' '/>
-      </div>
       <div className='Header__img Header__img--shape01'>
         <img src={shape01} alt=' '/>
       </div>
