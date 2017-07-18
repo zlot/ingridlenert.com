@@ -18,6 +18,19 @@ export default class App extends Component {
     startAnimations({
       interval: ANIMATION_INTERVAL
     })
+
+    $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+      switch(newSize) {
+        case 'small':
+          stopAnimations()
+          break
+        case 'medium':
+        case 'large':
+        default:
+          startAnimations({interval: ANIMATION_INTERVAL})
+          break
+      }
+    });
   }
 
   render = () => {
