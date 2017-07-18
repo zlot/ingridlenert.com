@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import Header from './Header'
 import 'foundation-sites'
 import $ from 'jquery'
-import './assets/lucy_mitsy.scss'
-import './assets/jessica.scss'
-import './assets/amani.scss'
-import './assets/alfie.scss'
 import {addAnimation, startAnimations} from './spriteAnimator'
 
 export default class App extends Component {
