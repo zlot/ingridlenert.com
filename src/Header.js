@@ -1,5 +1,4 @@
 import React from 'react'
-import './Header.scss'
 import shape01 from './assets/shape 01.svg'
 import shape02 from './assets/shape 02.svg'
 import shape03 from './assets/shape 03.svg'
