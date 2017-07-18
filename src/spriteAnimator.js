@@ -2,8 +2,10 @@ import $ from 'jquery'
 
 const animations = []
 let animInterval
+let animating = false
 
 const startAnimations = ({interval=1000}) => {
+  if(animating) return
   animInterval = setInterval(() => {
     animations.forEach(anim => {
       anim.$el.removeClass(`${anim.name}-${anim.currentFrame}`)
@@ -14,10 +16,12 @@ const startAnimations = ({interval=1000}) => {
       anim.$el.addClass(`${anim.name}-${anim.currentFrame}`)
     })
   }, interval)
+  animating = true
 }
 
 const stopAnimations = () => {
   clearInterval(animInterval)
+  animating = false
 }
 
 const addAnimation = (name, numOfFrames) => {
