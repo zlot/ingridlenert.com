@@ -1,5 +1,7 @@
 Website for ingridlenert.com
 
+Hosted on github pages.
+
 ## Steps for TexturePacker
 * Export out sprite anims as svg's. Export out at twice the size of what they will be actually displayed as.
 * Texture format: PNG-8 if possible
